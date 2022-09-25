@@ -6,4 +6,5 @@ io
 datetime
 random
 nibabel
+re
 #antspyx
