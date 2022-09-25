@@ -1,6 +1,6 @@
 # PNL-coding-test
 
-This repository contains the implementation of the two tasks (arithmatic and neuroimaging) in the coding test at PNL interview.
+This repository contains the implementation of the two tasks (arithmatic and neuroimaging) in the coding test at PNL interview. Output files from both tasks can be found in the output_files directory. Workflows can be found in the notebook under the name bioinform-test.ipynb.
 
 #### Environment setup
 Install the dependencies:
