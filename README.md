@@ -11,7 +11,7 @@ Install the dependencies:
 
 This task aimed at anonymizing participants' privacy information in a dataset. 
 
-To run the pipeline:
+##### Run the pipeline:
 ```python3 task1.py [dowload path] [upload path] [filename] [TOKEN]```
 
 The pipeline consists of the following parts:
@@ -47,6 +47,9 @@ The pipeline consists of the following parts:
 ### Task 2
 
 This task aimed at computing volumes of different brain regions. To do so, we have to first superimpose a given T1w image upon an standard image whose region boundaries are known utilizing the ANTs package. However, I have encountered environment compatibility issues when installing ANTs (linux based) to my laptop with macOS. Thus, I implemented my pipeline without having a properly registered image, but the pipeline should be able to adapt to images that undergo a successful registration process. 
+
+##### Run the pipeline:
+```python3 task2.py```
 
 The pipeline consists of the following parts:
 
