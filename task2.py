@@ -3,10 +3,7 @@ import nibabel as nib
 import numpy as np
 import re
 
-# Since ANTs package has compatibility issue when installing to my macOS, registration step is hardly fulfilled
-
-# In this script, I skip registration and load the atlas-T1w image instead to write sample code on the task
-# The following code should be applicable to a properly registered image
+# The registration step was fulfilled locally utilizting antsRegistration from ANTs package
 
 def find_volume(label_data, reg_data):
     # find unique labels in label data
@@ -41,8 +38,8 @@ def process_raw_FS(raw_txt):
     return brain_label
 
 def main():
-    # load and read registered data (if succeeded)
-    reg = nib.load('brain_data/atlas-T1w.nii.gz')
+    # load and read registered data
+    reg = nib.load('brain_data/registered_Warped.nii.gz')
     reg_data = reg.get_fdata()
 
     #load and read label data
